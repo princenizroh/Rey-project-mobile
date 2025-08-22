@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8da00aefd4b78f4b956fb48969b7c8f, type: 3}
+  m_Name: Seq8AyahPulang
+  m_EditorClassIdentifier: 
+  coreBlock:
+  - npcName: 2
+    dialog: "Sayang, ayah pulang"
+  - npcName: 1
+    dialog: "Ayah udah pulang"
+  - npcName: 2
+    dialog: "Rey kenapa?"
+  - npcName: 1
+    dialog: "Rewel terus dari pagi"

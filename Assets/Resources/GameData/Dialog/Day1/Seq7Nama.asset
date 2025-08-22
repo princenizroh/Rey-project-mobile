@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44a62d2f47d58144a62e91f1449782d, type: 3}
+  m_Name: Seq7Nama
+  m_EditorClassIdentifier: 
+  coreBlock:
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Sayang, kira kira namanya mau dipanggil siapa
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Ayah sudah menyimpan nama untuk anak kita
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Apa itu sayang
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Namanya Gabungan dari nama kita berdua
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Rey Isayat Putri
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Kenapa begitu?
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Nama Rey, Ayah ambil dari namamu Linda Rey Putri sebagai pengigat
+        abadi dari ibu hebat yang telah berjuang melahirkannya
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Seperti dalam bahasa spanyol Rey adalah ratu. Nantinya akan menjadi
+        anak yang hebat dalam menjadi pemimpin dan cerdas dalam segala situasi yang
+        ada
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Isayat dari nama ayah, Adam Gryat Isayat. Sebagai  tanda bahwa
+        dia adalah penerus keluarga kita
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 2
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Dan Putri adalah doanya, semoga dia tumbuh menjadi putri yang
+        membanggakan kita semua
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 2
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Hmm.. aku suka dengan nama itu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 2
+      camChoice: 0
+      npcName: 0
+      dialogEntry: Rey
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 2
+      camChoice: 0
+      npcName: 0
+      dialogEntry: Namaku Rey
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}

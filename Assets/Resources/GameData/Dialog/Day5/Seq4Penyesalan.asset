@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44a62d2f47d58144a62e91f1449782d, type: 3}
+  m_Name: Seq4Penyesalan
+  m_EditorClassIdentifier: 
+  coreBlock:
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Sudah sore kerjaanku selesai semua
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Lega banget tapi besok makin sibuk lagi
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Biarlah, hari ini aku mau senang senang dulu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Ibu mau bikin makan malam
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Eh... mau bikin apa ya?
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Tapi ayah pulang gak tau kapan
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Bikin telur dadar... atau bikin gorengan aja ya..
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Nanti lah aku pikir pikir dulu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Karena ini dah sore ada waktu mandiin Rey dulu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Malam ini mau scroll tiktok aja cape banget rasanya hari ini
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Saatnya mandikan Rey dulu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Btw, hari ini aku sudah marah besar ke Rey
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Maafin Ibu ya nak
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Ibu sudah memarahi kamu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Ibu juga stres membagi dua pekerjaan ini
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Ibu juga belum siap untuk menjadi ibu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Padahal setelah Ibu menikah dengan ayahmu, Ibu masih ingin bersenang-senang
+        dulu bersama ayahmu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Momen ini gak pernah diduga dengan kelahiranmu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Rey
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Bangun, kita mandi dulu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Ayo Rey kita mandi dulu, sekalian makan
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}

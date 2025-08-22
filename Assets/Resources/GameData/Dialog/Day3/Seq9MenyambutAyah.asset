@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44a62d2f47d58144a62e91f1449782d, type: 3}
+  m_Name: Seq9MenyambutAyah
+  m_EditorClassIdentifier: 
+  coreBlock:
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Udah pulang
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Iya sayang, gimana Rey hari ini
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Rewel terus, nangis melulu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Mungkin dia lagi growth spurt
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Gak, terlalu cepat untuk Rey
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Hahaha iya. Emangnya Rey bangun berapa kali hari ini
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Baru 3 kali dan itu karna tiap pagi kamu bangunin terus
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Hahaha iya iya
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Tapi itu masih normal, beruntung Rey masih sering tidurnya daripada bangun
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Pokoknya capek banget
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Sabar sayang, Rey kan masih kecil
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Aku ke dapur dulu
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Oke sayang
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Ayah mandi dulu ya nak
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}

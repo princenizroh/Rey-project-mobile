@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44a62d2f47d58144a62e91f1449782d, type: 3}
+  m_Name: Seq9AyahPulang
+  m_EditorClassIdentifier: 
+  coreBlock:
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Eh ada anakku sayang
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Nungguin ayah pulang ya
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 0
+      dialogEntry: Ayah
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 2
+      dialogEntry: Rey gak nakal kan
+      audioDialogEntry: {fileID: 0}
+      choices:
+      - playerChoice: '*Nghh* (Merespon)'
+        correctChoice: 1
+        dialogResponses:
+        - npcName: 2
+          npcResponse: Anak pintar gak nakal ya
+        - npcName: 2
+          npcResponse: Anakku memang hebat
+        - npcName: 2
+          npcResponse: Jangan ngerepotin ibu ya nak
+        audioDialogResponse: {fileID: 8300000, guid: 58c51a9fc58fbad449d0f512c33c5d5e, type: 3}
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}

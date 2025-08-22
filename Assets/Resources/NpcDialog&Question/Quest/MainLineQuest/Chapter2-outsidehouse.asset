@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782357ca629f0834990bb5a849463372, type: 3}
+  m_Name: Chapter2-outsidehouse
+  m_EditorClassIdentifier: 
+  dialogBlocks:
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: (berpikir) Di titik ini, Aku setengah berharap ada orang tua kaya
+      raya datang dan nawarin kita tawaran yang nggak bisa ditolak.
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: -7868821653070497495, guid: 33ea8779e17ee84449044965c5f511da, type: 3}
+    npcDialog: Terus? Dia bilang ini pekerjaan berbahaya, tapi cuma Kakak yang bisa
+      ngelakuin?
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Ya. Klise itu. Tapi serius, kalau itu beneran kejadian, Kakak bakal
+      nyemplung ke sungai.
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: 5618610313636735265, guid: 47fbb4baa498b21479f07ca2682d5948, type: 3}
+    npcDialog: Mungkin kita memang harus menerima nasib.
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Lux...
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: -740251383421329420, guid: 090383ebda5423e4d973b03ce9cefa62, type: 3}
+    npcDialog: Apa?
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: 6759254301920569523, guid: cb2a05260a495b24da31013d13f769d5, type: 3}
+    npcDialog: Kalau gitu, tolong kerjakan PR fotografi Adek!
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Itu bukan cara kerja tugas. Bukannya Adek bisa kerjakan sendiri? Kan
+      tinggal foto.
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Baiklah. Tapi Kakak nanti tagih, oke?
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: -4820308260741081828, guid: c9c015fe673a3c44bbeb496f1725c7b7, type: 3}
+    npcDialog: Terserah. Foto dari tangan Kakak tidak pernah jelek juga. Gak kayak
+      roti dan air di tempat ini.
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: -4820308260741081828, guid: c9c015fe673a3c44bbeb496f1725c7b7, type: 3}
+    npcDialog: ...
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: -740251383421329420, guid: 090383ebda5423e4d973b03ce9cefa62, type: 3}
+    npcDialog: Iya, iya. Gak akan kubuang lagi. Kalau Kakak mau, kameranya buat Kakak
+      aja deh.
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: 6759254301920569523, guid: cb2a05260a495b24da31013d13f769d5, type: 3}
+    npcDialog: Siapa tahu? Ada foto menarik, jadi duit. Dan tadi, maaf. Harusnya
+      aku gak banyak komen.
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: ...
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Duh, duh... jangan ngambek nah.
+    choices: []

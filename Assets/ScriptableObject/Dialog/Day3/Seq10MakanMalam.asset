@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8da00aefd4b78f4b956fb48969b7c8f, type: 3}
+  m_Name: Seq10MakanMalam
+  m_EditorClassIdentifier: 
+  coreBlock:
+  - npcName: 1
+    dialog: "Yuk makan malam"
+  - npcName: 2
+    dialog: "Masakan istriku memang enak seperti biasa"
+  - npcName: 1
+    dialog: "_nada lelah_ Biasa aja kali"
+  - npcName: 1
+    dialog: "Btw, besok aku mulai kerja lagi"
+  - npcName: 2
+    dialog: "Serius? Apa gak kurang lama cutinya"
+  - npcName: 1
+    dialog: "Iya, aku juga udah disuruh kerja lagi"
+  - npcName: 1
+    dialog: "Agak sulit mengambil cuti di bagian administrasi di perusahaan pembuatan fusi nuklir"
+  - npcName: 1
+    dialog: "Bisa bisa, kalau kelamaan ambil cuti nanti bisa dipecat"
+  - npcName: 2
+    dialog: "Emangnya gak ada mau niatan buat berhenti"
+  - npcName: 2
+    dialog: "Kan gaji udah cukup dari ayah di bagian teknisi pembuatan fusi nuklir"
+  - npcName: 1
+    dialog: "Gak mau, gini gini aku juga orang penting walaupun dibagian administrasi"
+  - npcName: 2
+    dialog: "Iya deh"
+  - npcName: 1
+    dialog: "Aku udah pikir-pikir"
+  - npcName: 1
+    dialog: "Rey harus pindah ke kamarnya sendiri"
+  - npcName: 2
+    dialog: "Yakin? Masih kecil banget"
+  - npcName: 1
+    dialog: "_tegas_ Aku gak bisa kerja sambil begadang terus, apalagi nanti Rey bisa kebrisikan"

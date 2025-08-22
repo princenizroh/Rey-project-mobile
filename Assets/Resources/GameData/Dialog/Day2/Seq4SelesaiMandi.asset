@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44a62d2f47d58144a62e91f1449782d, type: 3}
+  m_Name: Seq4SelesaiMandi
+  m_EditorClassIdentifier: 
+  coreBlock:
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 1
+      dialogEntry: Nah. udah bersih dan wangi
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 0
+      dialogEntry: Hangat
+      audioDialogEntry: {fileID: 0}
+      choices: []
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}
+  - Type: 0
+    Dialog:
+      cutsceneType: 0
+      dialogType: 1
+      dialog3DLocation: 0
+      camChoice: 0
+      npcName: 0
+      dialogEntry: Lapar...
+      audioDialogEntry: {fileID: 0}
+      choices:
+      - playerChoice: '*Neh* (Lapar)'
+        correctChoice: 1
+        dialogResponses:
+        - npcName: 1
+          npcResponse: Iya iya bentar
+        audioDialogResponse: {fileID: 8300000, guid: 34fc5efa1b0dcce4c8ec06157917fae7, type: 3}
+      - playerChoice: '*Oek* (Menangis)'
+        correctChoice: 1
+        dialogResponses:
+        - npcName: 1
+          npcResponse: '{+1stress} Iya iya sabar dulu malah nangis'
+        audioDialogResponse: {fileID: 8300000, guid: b5c30f5149243184b9479b5ab6cf0fec, type: 3}
+    Animation:
+      Coordinates: {x: 0, y: 0, z: 0}

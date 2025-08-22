@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782357ca629f0834990bb5a849463372, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: 
+  dialogBlocks:
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: (berbicara sendiri) Dunia ajaib...
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: ................
+    choices: []

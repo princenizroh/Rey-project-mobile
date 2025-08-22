@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782357ca629f0834990bb5a849463372, type: 3}
+  m_Name: Battle-UrgentDL
+  m_EditorClassIdentifier: 
+  dialogBlocks:
+  - npcName: Lux
+    npcImage: {fileID: -7868821653070497495, guid: 33ea8779e17ee84449044965c5f511da, type: 3}
+    npcDialog: Kak... apa kamu tahu kalau ada desas desus bahwa ada monster di bawah
+      kota ini?
+    choices:
+    - playerChoice: Monster? Aku tidak percaya adikku ini mau mendengarkan pembicaraan
+        seperti ini
+      npcResponse: Aku kan masih anak-anak, tentu saja suka dengan sesuatu yang hampir
+        mustahil ada
+    - playerChoice: Ternyata kamu suka berita gosip kota juga ya?
+      npcResponse: Aku kan masih anak-anak, tentu saja suka dengan sesuatu yang hampir
+        mustahil ada
+    - playerChoice: Tidak tau, apakah kamu percaya hal itu?
+      npcResponse: Aku kan masih anak-anak, tentu saja suka dengan sesuatu yang hampir
+        mustahil ada
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Jangan sebut dirimu anak-anak, jika kamu paham dengan apa yang kamu
+      katakan
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: -4820308260741081828, guid: c9c015fe673a3c44bbeb496f1725c7b7, type: 3}
+    npcDialog: Jadi kak apa kamu ingin mencari tahu hal tersebut?
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Ayo cari mumpung lagi gabut juga
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Tapi dimana kita harus mencarinya?
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: 6759254301920569523, guid: cb2a05260a495b24da31013d13f769d5, type: 3}
+    npcDialog: Kata orang-orang kota, monsternya ada di dasar terdalam kota ini kak
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: ...
+    choices: []
+  - npcName: Erik
+    npcImage: {fileID: 7068193922103381106, guid: eaeec307420a52f4ca9353e1d1bb8b10, type: 3}
+    npcDialog: Kamu ada ide dimana itu?
+    choices: []
+  - npcName: Lux
+    npcImage: {fileID: -4820308260741081828, guid: c9c015fe673a3c44bbeb496f1725c7b7, type: 3}
+    npcDialog: Mari kita pergi ke selokan yang ada di bawah situ kak
+    choices: []

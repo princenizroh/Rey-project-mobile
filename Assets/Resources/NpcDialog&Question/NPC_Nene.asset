@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782357ca629f0834990bb5a849463372, type: 3}
+  m_Name: NPC_Nene
+  m_EditorClassIdentifier: 
+  dialogBlocks:
+  - npcName: Nene
+    npcImage: {fileID: 6448721065612948673, guid: 44fb1b079d8d2b34b85a7164b631de40, type: 3}
+    npcDialog: Halo kawan
+    choices: []
+  - npcName: Nene
+    npcImage: {fileID: 6448721065612948673, guid: 44fb1b079d8d2b34b85a7164b631de40, type: 3}
+    npcDialog: Apakah kamu kenal denganku?
+    choices: []
+  - npcName: Nene
+    npcImage: {fileID: 6448721065612948673, guid: 44fb1b079d8d2b34b85a7164b631de40, type: 3}
+    npcDialog: Hmm?
+    choices:
+    - playerChoice: Tidak
+      npcResponse: Hehehe... aku dari game.... Evil Genesis... hehehe
+    - playerChoice: Kamu kucing?
+      npcResponse: Aku setengah kucing setengah manusia
+    - playerChoice: Aku mau keluar game ini
+      npcResponse: exitgame:true
