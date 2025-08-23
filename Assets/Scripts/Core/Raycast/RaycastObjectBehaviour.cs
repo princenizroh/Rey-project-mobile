@@ -149,15 +149,6 @@ public class RaycastObjectBehaviour : MonoBehaviour
         isCurrentlyBeingRaycast = true;
         lastRaycastTime = Time.time;
         
-        if (showRaycastInfo)
-        {
-            Debug.Log($"{logMessage} - GameObject: {gameObject.name}, Hit Point: {hitInfo.point}, Distance: {hitInfo.distance:F2}");
-        }
-        else
-        {
-            Debug.Log($"{logMessage} - GameObject: {gameObject.name}");
-        }
-        
         // Check if we need to spawn UI (only spawn when first detected)
         if (!wasBeingRaycast && spawnedUI == null)
         {

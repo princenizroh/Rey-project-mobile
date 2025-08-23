@@ -140,10 +140,32 @@ public abstract class NarratorBase : MonoBehaviour
     
     /// <summary>
     /// Replacement untuk Input.GetKeyDown(KeyCode.E) - now uses BaseInputHandler static method
+    /// Also includes touch interaction for mobile support
     /// </summary>
     protected bool GetInteractionKeyDown()
     {
-        return BaseInputHandler.InteractionKeyDown;
+        // BaseInputHandler works on all platforms
+        bool eKeyPressed = BaseInputHandler.InteractionKeyDown;
+        
+        // Mouse click (Editor/PC)
+        #if UNITY_EDITOR
+        bool mousePressed = Input.GetMouseButtonDown(0);
+        #else
+        bool mousePressed = false;
+        #endif
+        
+        // Touch input (Mobile)
+        bool touchPressed = false;
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                touchPressed = true;
+            }
+        }
+        
+        return eKeyPressed || mousePressed || touchPressed;
     }
 
     private void InitializeAudioSystem()
@@ -902,9 +924,8 @@ public abstract class NarratorBase : MonoBehaviour
                     Debug.Log("[NarratorBase] Player looking at interactive object");
                 }
 
-                if (GetInteractionKeyDown()) // MIGRATED: Input.GetKeyDown(KeyCode.E) -> GetInteractionKeyDown()
+                if (GetInteractionKeyDown()) 
                 {
-                    // Get the hit object's RaycastObjectBehaviour component
                     if (rayCastObject.currentHitObject != null)
                     {
                         RaycastObjectBehaviour behaviour = rayCastObject.currentHitObject.GetComponent<RaycastObjectBehaviour>();
@@ -965,7 +986,7 @@ public abstract class NarratorBase : MonoBehaviour
         {
             if (rayCastObject != null && rayCastObject.raycastStatus)
             {
-                if (GetInteractionKeyDown()) // MIGRATED: Input.GetKeyDown(KeyCode.E) -> GetInteractionKeyDown()
+                if (GetInteractionKeyDown()) 
                 {
                     if (rayCastObject.currentHitObject != null)
                     {
