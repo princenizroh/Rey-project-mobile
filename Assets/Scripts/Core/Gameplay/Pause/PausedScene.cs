@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class PausedScene : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class PausedScene : MonoBehaviour
     [Header("Debug")]
     [SerializeField] private bool enableDebugLogs = true;
     
+    [Header("Input Handler")]
+    public PauseInputHandler pauseInputHandler;
+    
     private bool isPaused = false;
     private CanvasGroup menuCanvasGroup;
     private CanvasGroup textCanvasGroup1;
@@ -30,20 +34,34 @@ public class PausedScene : MonoBehaviour
     void Start()
     {
         InitializePauseMenu();
+        
+        // Auto-find PauseInputHandler if not assigned
+        if (pauseInputHandler == null)
+        {
+            pauseInputHandler = FindFirstObjectByType<PauseInputHandler>();
+        }
+        
+        // Make sure the input handler points to this pause scene
+        if (pauseInputHandler != null && pauseInputHandler.pausedScene == null)
+        {
+            pauseInputHandler.pausedScene = this;
+        }
     }
     
     void Update()
     {
-        // Check for Escape key press
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // Use PauseInputHandler exclusively - no more fallback!
+        if (pauseInputHandler != null)
         {
-            TogglePause();
-        }
-        
-        // Check for Q key press when paused (go to main menu)
-        if (isPaused && Input.GetKeyDown(KeyCode.Q))
-        {
-            GoToMainMenu();
+            if (pauseInputHandler.GetEscapeKeyDown())
+            {
+                TogglePause();
+            }
+            
+            if (isPaused && pauseInputHandler.GetBackToMainMenuKeyDown())
+            {
+                GoToMainMenu();
+            }
         }
     }
     

@@ -111,7 +111,7 @@ namespace GenshinImpactMovementSystem
         {
             stateMachine.Player.Input.PlayerActions.WalkToggle.started += OnWalkToggleStarted;
 
-            stateMachine.Player.Input.PlayerActions.Look.started += OnMouseMovementStarted;
+            stateMachine.Player.Input.PlayerActions.LookPC.started += OnMouseMovementStarted;
 
             stateMachine.Player.Input.PlayerActions.Movement.performed += OnMovementPerformed;
             stateMachine.Player.Input.PlayerActions.Movement.canceled += OnMovementCanceled;
@@ -121,7 +121,7 @@ namespace GenshinImpactMovementSystem
         {
             stateMachine.Player.Input.PlayerActions.WalkToggle.started -= OnWalkToggleStarted;
 
-            stateMachine.Player.Input.PlayerActions.Look.started -= OnMouseMovementStarted;
+            stateMachine.Player.Input.PlayerActions.LookPC.started -= OnMouseMovementStarted;
 
             stateMachine.Player.Input.PlayerActions.Movement.performed -= OnMovementPerformed;
             stateMachine.Player.Input.PlayerActions.Movement.canceled -= OnMovementCanceled;

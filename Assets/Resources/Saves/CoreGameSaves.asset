@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ed4bcab5d0740498ba2c46cdb480b2, type: 3}
   m_Name: CoreGameSaves
   m_EditorClassIdentifier: 
-  day: 1
-  timeOfDay: 3
-  mother_stress_level: 624
+  day: 11
+  timeOfDay: 1
+  mother_stress_level: 1114

@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 3193559028520533685}
   - component: {fileID: 6949324194058289321}
   - component: {fileID: 8813396614220057912}
+  - component: {fileID: 3132073945990947608}
   m_Layer: 5
   m_Name: NPC_Dialog_Themplate
   m_TagString: Untagged
@@ -310,6 +311,19 @@ MonoBehaviour:
   buttonW: {fileID: 0}
   buttonE: {fileID: 0}
   autoFindComponents: 1
+--- !u!114 &3132073945990947608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981284733392907837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Gamepad>/buttonSouth
 --- !u!1 &5163338632308727303
 GameObject:
   m_ObjectHideFlags: 0

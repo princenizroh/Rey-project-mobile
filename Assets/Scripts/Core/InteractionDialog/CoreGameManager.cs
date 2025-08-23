@@ -117,6 +117,9 @@ public class CoreGameManager : MonoBehaviour
     [Header("Audio Settings")]
     public AudioSource dialogAudioSource;
     
+    [Header("Input Handler")]
+    public DialogInputHandler dialogInputHandler; // New Input Handler
+    
     // Private variables
     private GameObject dialogInstance;
     private GameObject questionInstance;
@@ -213,6 +216,25 @@ public class CoreGameManager : MonoBehaviour
             else
             {
                 Debug.LogWarning("Failed to initialize AudioSource. Dialog audio will be disabled.");
+            }
+            
+            // Auto-find DialogInputHandler if not assigned
+            if (dialogInputHandler == null)
+            {
+                dialogInputHandler = GetComponent<DialogInputHandler>();
+                if (dialogInputHandler == null)
+                {
+                    dialogInputHandler = FindFirstObjectByType<DialogInputHandler>();
+                }
+                
+                if (dialogInputHandler != null)
+                {
+                    Debug.Log("DialogInputHandler found and assigned automatically.");
+                }
+                else
+                {
+                    Debug.LogWarning("DialogInputHandler not found. Will use fallback Input.GetKeyDown.");
+                }
             }
         }
         catch (System.Exception e)
@@ -4947,6 +4969,16 @@ public class CoreGameManager : MonoBehaviour
     {
         Debug.Log($"Showing {choices?.Length ?? 0} choices using button array approach...");
 
+        // PREVENT INPUT during choice display
+        isInDialogTransition = true;
+
+        // CLEAR INPUT STATES to prevent auto-selection bug
+        if (dialogInputHandler != null)
+        {
+            dialogInputHandler.ClearChoiceInputStates();
+            Debug.Log("[CHOICE-FIX] Cleared choice input states to prevent auto-selection");
+        }
+
         onChoiceSelected = callback;
         buttonTweenIds.Clear();
 
@@ -5137,6 +5169,19 @@ public class CoreGameManager : MonoBehaviour
                 Debug.Log($"Hidden unused button {i}: {buttonArray[i].name}");
             }
         }
+        
+        // Reset dialog transition flag after a delay to prevent immediate input processing
+        StartCoroutine(ResetChoiceTransitionFlag());
+    }
+    
+    /// <summary>
+    /// Reset choice transition flag to allow input processing after choices are shown
+    /// </summary>
+    private IEnumerator ResetChoiceTransitionFlag()
+    {
+        yield return new WaitForSeconds(0.3f); // Longer delay for choices
+        isInDialogTransition = false;
+        Debug.Log("[CHOICE-FIX] Choice transition flag reset - input processing now allowed");
     }
     
     /// <summary>
@@ -6681,7 +6726,10 @@ public class CoreGameManager : MonoBehaviour
         bool canUpdateDialog = (currentTime - lastDialogUpdateTime) >= 0.2f;
         
         // Use Space key for dialog progression with enhanced protection
-        if (Input.GetKeyDown(KeyCode.Space) && canProcessInput && canUpdateDialog)
+        // UPDATED: Use DialogInputHandler only (no fallback)
+        bool spacePressed = dialogInputHandler != null && dialogInputHandler.GetDialogKeyDown();
+        
+        if (spacePressed && canProcessInput && canUpdateDialog)
         {
             // Set all protection flags immediately
             lastInputTime = currentTime;
@@ -6689,7 +6737,7 @@ public class CoreGameManager : MonoBehaviour
             isProcessingInput = true;
             isInDialogTransition = true;
             
-            Debug.Log($"[INPUT] SPACE KEY PRESSED - Time: {currentTime:F2}, Starting HandleDialogProgression()");
+            Debug.Log($"[INPUT] DIALOG KEY PRESSED - Time: {currentTime:F2}, Starting HandleDialogProgression()");
             
             try
             {
@@ -6713,7 +6761,10 @@ public class CoreGameManager : MonoBehaviour
         }
         
         // Escape key for cutscenes (no throttling needed)
-        if (Input.GetKeyDown(KeyCode.Escape) && isPlayingCutscene)
+        // UPDATED: Use DialogInputHandler only (no fallback)
+        bool escapePressed = dialogInputHandler != null && dialogInputHandler.GetEscapeKeyDown();
+        
+        if (escapePressed && isPlayingCutscene)
         {
             SkipCutscene();
         }
@@ -6750,23 +6801,35 @@ public class CoreGameManager : MonoBehaviour
     
     /// <summary>
     /// Handle choice input using Q, W, E keys
+    /// UPDATED: Use DialogInputHandler instead of Input.GetKeyDown
     /// </summary>
     private void HandleChoiceInput()
     {
         // Only handle choice input if choices are currently visible
         if (onChoiceSelected == null) return;
         
+        // Additional protection: don't process input immediately after showing choices
+        if (isInDialogTransition) return;
+        
         // Check for Q, W, E key presses for choice selection
-        if (Input.GetKeyDown(KeyCode.Q))
+        // UPDATED: Use DialogInputHandler only (no fallback)
+        bool qPressed = dialogInputHandler != null && dialogInputHandler.GetChoiceQKeyDown();
+        bool wPressed = dialogInputHandler != null && dialogInputHandler.GetChoiceWKeyDown();
+        bool ePressed = dialogInputHandler != null && dialogInputHandler.GetChoiceEKeyDown();
+        
+        if (qPressed)
         {
+            Debug.Log("[CHOICE-INPUT] Q key pressed - selecting choice 0");
             SelectChoice(0);
         }
-        else if (Input.GetKeyDown(KeyCode.W))
+        else if (wPressed)
         {
+            Debug.Log("[CHOICE-INPUT] W key pressed - selecting choice 1");
             SelectChoice(1);
         }
-        else if (Input.GetKeyDown(KeyCode.E))
+        else if (ePressed)
         {
+            Debug.Log("[CHOICE-INPUT] E key pressed - selecting choice 2");
             SelectChoice(2);
         }
     }
