@@ -268,7 +268,7 @@ namespace GenshinImpactMovementSystem
                     ""id"": ""5b583f59-0895-4abf-946a-560b664a13e5"",
                     ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
-                    ""processors"": ""ScaleVector2(x=0.1,y=0.1),DeltaTimeScale"",
+                    ""processors"": ""ScaleVector2,DeltaTimeScale"",
                     ""groups"": ""Touch"",
                     ""action"": ""LookMobile"",
                     ""isComposite"": false,

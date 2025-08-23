@@ -137,6 +137,15 @@ public abstract class NarratorBase : MonoBehaviour
     }
     #endregion
     #region Initialization
+    
+    /// <summary>
+    /// Replacement untuk Input.GetKeyDown(KeyCode.E) - now uses BaseInputHandler static method
+    /// </summary>
+    protected bool GetInteractionKeyDown()
+    {
+        return BaseInputHandler.InteractionKeyDown;
+    }
+
     private void InitializeAudioSystem()
     {
         audioDict = new Dictionary<string, AudioClipData>();
@@ -191,7 +200,6 @@ public abstract class NarratorBase : MonoBehaviour
         {
             rayCastObject = FindFirstObjectByType<RaycastObjectCam>();
         }
-
     }
     #endregion
     #region Sequence Detection
@@ -894,7 +902,7 @@ public abstract class NarratorBase : MonoBehaviour
                     Debug.Log("[NarratorBase] Player looking at interactive object");
                 }
 
-                if (Input.GetKeyDown(KeyCode.E))
+                if (GetInteractionKeyDown()) // MIGRATED: Input.GetKeyDown(KeyCode.E) -> GetInteractionKeyDown()
                 {
                     // Get the hit object's RaycastObjectBehaviour component
                     if (rayCastObject.currentHitObject != null)
@@ -957,7 +965,7 @@ public abstract class NarratorBase : MonoBehaviour
         {
             if (rayCastObject != null && rayCastObject.raycastStatus)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (GetInteractionKeyDown()) // MIGRATED: Input.GetKeyDown(KeyCode.E) -> GetInteractionKeyDown()
                 {
                     if (rayCastObject.currentHitObject != null)
                     {

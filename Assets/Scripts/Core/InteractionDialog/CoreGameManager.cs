@@ -117,9 +117,6 @@ public class CoreGameManager : MonoBehaviour
     [Header("Audio Settings")]
     public AudioSource dialogAudioSource;
     
-    [Header("Input Handler")]
-    public DialogInputHandler dialogInputHandler; // New Input Handler
-    
     // Private variables
     private GameObject dialogInstance;
     private GameObject questionInstance;
@@ -216,25 +213,6 @@ public class CoreGameManager : MonoBehaviour
             else
             {
                 Debug.LogWarning("Failed to initialize AudioSource. Dialog audio will be disabled.");
-            }
-            
-            // Auto-find DialogInputHandler if not assigned
-            if (dialogInputHandler == null)
-            {
-                dialogInputHandler = GetComponent<DialogInputHandler>();
-                if (dialogInputHandler == null)
-                {
-                    dialogInputHandler = FindFirstObjectByType<DialogInputHandler>();
-                }
-                
-                if (dialogInputHandler != null)
-                {
-                    Debug.Log("DialogInputHandler found and assigned automatically.");
-                }
-                else
-                {
-                    Debug.LogWarning("DialogInputHandler not found. Will use fallback Input.GetKeyDown.");
-                }
             }
         }
         catch (System.Exception e)
@@ -4972,12 +4950,10 @@ public class CoreGameManager : MonoBehaviour
         // PREVENT INPUT during choice display
         isInDialogTransition = true;
 
-        // CLEAR INPUT STATES to prevent auto-selection bug
-        if (dialogInputHandler != null)
-        {
-            dialogInputHandler.ClearChoiceInputStates();
-            Debug.Log("[CHOICE-FIX] Cleared choice input states to prevent auto-selection");
-        }
+        // CLEAR INPUT STATES to prevent auto-selection bug  
+        // No need to check - BaseInputHandler static method handles this automatically
+        BaseInputHandler.ClearChoices();
+        Debug.Log("[CHOICE-FIX] Cleared choice input states to prevent auto-selection via BaseInputHandler");
 
         onChoiceSelected = callback;
         buttonTweenIds.Clear();
@@ -6726,8 +6702,8 @@ public class CoreGameManager : MonoBehaviour
         bool canUpdateDialog = (currentTime - lastDialogUpdateTime) >= 0.2f;
         
         // Use Space key for dialog progression with enhanced protection
-        // UPDATED: Use DialogInputHandler only (no fallback)
-        bool spacePressed = dialogInputHandler != null && dialogInputHandler.GetDialogKeyDown();
+        // UPDATED: Use BaseInputHandler static method - no assignment needed!
+        bool spacePressed = BaseInputHandler.DialogKeyDown;
         
         if (spacePressed && canProcessInput && canUpdateDialog)
         {
@@ -6761,8 +6737,8 @@ public class CoreGameManager : MonoBehaviour
         }
         
         // Escape key for cutscenes (no throttling needed)
-        // UPDATED: Use DialogInputHandler only (no fallback)
-        bool escapePressed = dialogInputHandler != null && dialogInputHandler.GetEscapeKeyDown();
+        // UPDATED: Use BaseInputHandler static method - no assignment needed!
+        bool escapePressed = BaseInputHandler.EscapeKeyDown;
         
         if (escapePressed && isPlayingCutscene)
         {
@@ -6812,10 +6788,10 @@ public class CoreGameManager : MonoBehaviour
         if (isInDialogTransition) return;
         
         // Check for Q, W, E key presses for choice selection
-        // UPDATED: Use DialogInputHandler only (no fallback)
-        bool qPressed = dialogInputHandler != null && dialogInputHandler.GetChoiceQKeyDown();
-        bool wPressed = dialogInputHandler != null && dialogInputHandler.GetChoiceWKeyDown();
-        bool ePressed = dialogInputHandler != null && dialogInputHandler.GetChoiceEKeyDown();
+        // UPDATED: Use BaseInputHandler static methods - no assignment needed!
+        bool qPressed = BaseInputHandler.ChoiceQKeyDown;
+        bool wPressed = BaseInputHandler.ChoiceWKeyDown;
+        bool ePressed = BaseInputHandler.ChoiceEKeyDown;
         
         if (qPressed)
         {

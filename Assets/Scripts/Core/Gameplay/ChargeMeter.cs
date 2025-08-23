@@ -34,6 +34,14 @@ public class ChargeMeter : MonoBehaviour
             Debug.LogError("ChargeMeterFill not found in the scene.");
         }
     }
+    
+    /// <summary>
+    /// Replacement untuk Input.GetKeyDown(KeyCode.Space) - now uses BaseInputHandler static method
+    /// </summary>
+    private bool GetSpaceKeyDown()
+    {
+        return BaseInputHandler.DialogKeyDown;
+    }
 
     public void changeChargeRate(float newChargeRate)
     {
@@ -138,7 +146,8 @@ public class ChargeMeter : MonoBehaviour
     void Update()
     {
         // Handle Space key press with cooldown
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time >= lastSpacePress + spacePressCooldown)
+        // MIGRATED: Input.GetKeyDown(KeyCode.Space) -> GetSpaceKeyDown()
+        if (GetSpaceKeyDown() && Time.time >= lastSpacePress + spacePressCooldown)
         {
             lastSpacePress = Time.time;
             

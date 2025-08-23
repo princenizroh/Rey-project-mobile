@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Rey/Zen/MainMenuIntro.unity
     guid: e60d62809c3984541864cc0dccf8413f
   - enabled: 1
@@ -19,4 +19,5 @@ EditorBuildSettings:
     guid: cc19232ff6d60d143bd26a24f534dcd9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ad388df23514a8745b236a5266071164, type: 3}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 79b0cb380a91bbd4bafcb76fea112283, type: 2}
   m_UseUCBPForAssetBundles: 0
