@@ -147,25 +147,7 @@ public abstract class NarratorBase : MonoBehaviour
         // BaseInputHandler works on all platforms
         bool eKeyPressed = BaseInputHandler.InteractionKeyDown;
         
-        // Mouse click (Editor/PC)
-        #if UNITY_EDITOR
-        bool mousePressed = Input.GetMouseButtonDown(0);
-        #else
-        bool mousePressed = false;
-        #endif
-        
-        // Touch input (Mobile)
-        bool touchPressed = false;
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Began)
-            {
-                touchPressed = true;
-            }
-        }
-        
-        return eKeyPressed || mousePressed || touchPressed;
+        return eKeyPressed ;
     }
 
     private void InitializeAudioSystem()
